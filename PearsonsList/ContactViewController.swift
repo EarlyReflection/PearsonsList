@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class ContactViewController: UIViewController {
     
     @IBOutlet var phoneNumberLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
@@ -15,8 +15,9 @@ class DetailViewController: UIViewController {
     var person: Person!
 
     override func viewDidLoad() {
-        
+        //скейл заголовка в навигейшн баре
         UILabel.appearance(whenContainedInInstancesOf: [UINavigationBar.self]).adjustsFontSizeToFitWidth = true
+        
         title = person.fullName
         phoneNumberLabel.text = "Phone: \(person.phone)"
         emailLabel.text = "Email: \(person.email)"
