@@ -20,14 +20,14 @@ struct Person {
     static func getPersons() -> [Person] {
         
         var persons: [Person] = []
-        
         let dataManager = DataManager()
+        
         let names = Array(Set(dataManager.names))
         let surnames = Array(Set(dataManager.surnames))
         let phoneNumbers = Array(Set(dataManager.phoneNumbers))
         let emails = Array(Set(dataManager.emails))
         
-        for i in 0..<dataManager.names.count {
+        for i in 0..<names.count {
             let person = Person(
                 name: names[i],
                 surname: surnames[i],

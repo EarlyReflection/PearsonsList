@@ -34,8 +34,12 @@ class PersonsListViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-  
+        guard let detailVC = segue.destination as? DetailViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let person = persons[indexPath.row]
+        detailVC.person = person
     }
     
 
 }
+ 
