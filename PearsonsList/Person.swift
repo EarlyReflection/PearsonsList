@@ -22,10 +22,10 @@ struct Person {
         var persons: [Person] = []
         let dataManager = DataManager()
         
-        let names = Array(Set(dataManager.names))
-        let surnames = Array(Set(dataManager.surnames))
-        let phoneNumbers = Array(Set(dataManager.phoneNumbers))
-        let emails = Array(Set(dataManager.emails))
+        let names = Array(dataManager.names)
+        let surnames = Array(dataManager.surnames)
+        let phoneNumbers = Array(dataManager.phoneNumbers)
+        let emails = Array(dataManager.emails)
         
         for i in 0..<names.count {
             let person = Person(
