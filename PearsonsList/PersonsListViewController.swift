@@ -9,20 +9,9 @@ import UIKit
 
 class PersonsListViewController: UITableViewController {
     
-    private let persons = Person.getPersons()
+    var persons: [Person]!
     
-    override func viewDidLoad() {
-        
-        guard let tabBar = tabBarController else {return}
-        guard let viewControllers = tabBar.viewControllers else {return}
-        
-        for viewController in viewControllers {
-            if let detailVC = viewController as? DetailTableViewController {
-                detailVC.persons = persons
-            }
-        }
-    }
-    
+
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count

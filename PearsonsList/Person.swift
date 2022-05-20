@@ -27,12 +27,12 @@ struct Person {
         let phoneNumbers = Array(dataManager.phoneNumbers)
         let emails = Array(dataManager.emails)
         
-        for i in 0..<names.count {
+        for index in 0..<names.count {
             let person = Person(
-                name: names[i],
-                surname: surnames[i],
-                phone: phoneNumbers[i],
-                email: emails[i]
+                name: names[index],
+                surname: surnames[index],
+                phone: phoneNumbers[index],
+                email: emails[index]
             )
             persons.append(person)
         }

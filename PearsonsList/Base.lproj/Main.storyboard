@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="416" y="95"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="Z3T-6r-HWs">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cPa-Kx-x2L" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cPa-Kx-x2L" customClass="TabBarViewController" customModule="PearsonsList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="PdS-73-hh9"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="17d-ND-ban">
