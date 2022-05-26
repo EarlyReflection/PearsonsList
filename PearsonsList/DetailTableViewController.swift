@@ -10,7 +10,7 @@ import UIKit
 class DetailTableViewController: UITableViewController {
     
     var persons: [Person]!
-        
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,10 +37,10 @@ class DetailTableViewController: UITableViewController {
             content.text = person.email
             content.image = UIImage(systemName: "mail")
         }
-                
+        
         cell.contentConfiguration = content
         return cell
     }
- 
+
     
 }

@@ -8,6 +8,9 @@
 import Foundation
 
 class DataManager {
+    
+    static let shared = DataManager()
+    
     let names: Set = [
         "Harry", "Hermione", "Ronald", "Neville", "Luna",
         "Draco", "Albus", "Severus", "Minerva", "Alastor"
@@ -26,4 +29,7 @@ class DataManager {
         "(444)44-44-44", "(555)55-55-55", "(666)66-66-66", "(777)77-77-77",
         "(888)88-88-88", "(999)99-99-99"
     ]
+    
+    private init () {}
+    
 }

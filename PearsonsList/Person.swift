@@ -20,12 +20,12 @@ struct Person {
     static func getPersons() -> [Person] {
         
         var persons: [Person] = []
-        let dataManager = DataManager()
+        let dataManager = DataManager.shared
         
-        let names = Array(dataManager.names)
-        let surnames = Array(dataManager.surnames)
-        let phoneNumbers = Array(dataManager.phoneNumbers)
-        let emails = Array(dataManager.emails)
+        let names = dataManager.names.shuffled()
+        let surnames = dataManager.surnames.shuffled()
+        let phoneNumbers = dataManager.phoneNumbers.shuffled()
+        let emails = dataManager.emails.shuffled()
         
         for index in 0..<names.count {
             let person = Person(
